@@ -1,5 +1,6 @@
 \documentclass[11pt,a4paper,oneside,english]{article}
 \usepackage{latexstyles/print}
+
 \title{
 	Hamiltmas
 	}
@@ -14,11 +15,12 @@
 
 \begin{document}
 
-\begin{abstract}
-%blah
-\end{abstract}
-
 \maketitle
+
+\begin{abstract}
+	\immediate\write18{pandoc README.md -t latex -o Output/tmp.tex}%
+	\input{tmp.tex}
+\end{abstract}
 
 % > The Secretary, after mature reflection on this point, entertains a full conviction, that an assumption of the debts of the particular states by the union, and a like provision for them, as for those of the union, will be a measure of sound policy and substantial justice''
 % > -- Alexander Hamilton, first US treasury secretary, 14 January 1790
