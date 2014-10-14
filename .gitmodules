@@ -1,0 +1,3 @@
+[submodule "latexstyles"]
+	path = latexstyles
+	url = https://github.com/maxheld83/latexstyles
